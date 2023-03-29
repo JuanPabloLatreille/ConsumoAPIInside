@@ -1,7 +1,6 @@
 const urlCliente = 'https://api-deslocamento.herokuapp.com/api/v1/Cliente';
 const urlCondutor = 'https://api-deslocamento.herokuapp.com/api/v1/Condutor';
 const urlVeiculo = 'https://api-deslocamento.herokuapp.com/api/v1/Veiculo';
-const urlTempo = 'https://api-deslocamento.herokuapp.com/api/v1/WeatherForecast';
 const form = document.querySelector('form');
 
 
@@ -92,11 +91,6 @@ fetch(urlCondutor)
         console.log(data);
     })
 fetch(urlVeiculo)
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-    })
-fetch(urlTempo)
     .then(response => response.json())
     .then(data => {
         console.log(data);
